@@ -1,5 +1,7 @@
 body{
-background-color: rgb(198, 238, 200);
+background-color: rgb(133, 177, 202);
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
 }
 
 .principal{
@@ -7,3 +9,10 @@ background-color: rgb(198, 238, 200);
   width: 100px;
   background-color: rgb(241, 241, 214);
 }
+
+.imagem{
+  width: 500px;
+  padding-left: 360px; 
+  align-items: center;
+}
+
