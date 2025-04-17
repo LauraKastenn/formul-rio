@@ -1,0 +1,9 @@
+body{
+background-color: rgb(64, 112, 173);
+}
+
+.principal{
+  margin: 50px;
+  width: 100px;
+  background-color: rgb(241, 241, 214);
+}
