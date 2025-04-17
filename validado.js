@@ -42,6 +42,14 @@ function validarFormulario() {
         alert('Por favor, preencha quantos anos você possui de treinamento!')
         return;
     }
+    else if (!medalhas) {
+        alert('Por favor, preencha quais medalhas voce ja ganhou em torneios internacionais!')
+        return;
+    }
+    else if (!cob) {
+        alert('Por favor, preencha ha quanto tempo você esta no Comitê Olímpico Brasileiro (COB)!')
+        return;
+    }
     
     
 console.log(nome);
