@@ -1,5 +1,5 @@
 body{
-background-color: rgb(133, 177, 202);
+background-color: rgb(125, 130, 55);
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
 }
@@ -15,4 +15,6 @@ font-size: 20px;
   padding-left: 360px; 
   align-items: center;
 }
-
+header{
+  background-color:rgb(133, 177, 202); 
+}
