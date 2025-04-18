@@ -34,7 +34,7 @@
 <br>
 
 <label for="genero">Gênero:</label>
-                <select name="genero" id="genero" required>
+                <select class="geral" name="genero" id="genero" required>
                     <option value="">Selecione</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Feminino">Feminino</option> </select>
@@ -103,7 +103,7 @@
 
 <label for="titulos">Títulos e conquistas:</label>
 <br>
-<textarea id="titulos" name="titulos" required></textarea>
+<textarea class="geral" id="titulos" name="titulos" required></textarea>
 <br>
 <br>
 
@@ -174,13 +174,11 @@
 <br>
 
 <label for="consentimento">Consentimento para uso de imagem:</label>
-<br>
-<input type="checkbox" id="consentimento" name="consentimento" required>
+<input type="checkbox" id="termos" name="consentimento" required>
 <br>
 <br>
 
 <label for="termos">Aceitação dos termos e condições:</label>
-<br>
 <input type="checkbox" id="termos" name="termos" required>
 <br>
 <br>
@@ -196,6 +194,7 @@
 <input type="tel" id="telefone_emergencia" name="telefone_emergencia" required>
 <br>
 <br>
+<button type="submit">ENVIAR</button>
 </div>
     </form>
 </body>

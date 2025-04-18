@@ -1,5 +1,5 @@
 body{
-background-color: rgb(251, 253, 227);
+background-color: rgb(32, 70, 146);
 font-family: 'Times New Roman', Times, serif;
 font-size: 20px;
 }
@@ -12,6 +12,7 @@ font-size: 20px;
   margin: 100px;
   background-color: rgb(174, 174, 47);
   border-radius: 25px;
+  color: rgb(5, 1, 62);
 }
 
 .imagem{
@@ -19,5 +20,27 @@ font-size: 20px;
   padding-top: 40px; 
   padding-left: 400px; 
   align-items: center;
+}
+input{
+  border-radius: 10px;
+  width: 820px;  
+  height: 40px;
+}
+.geral{
+  width: 820px;  
+  height: 40px;
+  border-radius: 10px;
+}
+button{
+  font-size: 25px;
+  border-radius: 40px;
+  width: 820px;  
+  height: 60px;
+  background-color: rgb(17, 105, 34);
+  font-family: 'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+#termos{
+  width: 30px;
 }
 
