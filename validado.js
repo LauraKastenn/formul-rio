@@ -1,65 +1,101 @@
 function validarFormulario() {
     const nome = document.getElementById('nome').value.trim();
-    const cpf = document.getElementById('cpf').value.trim();
-    const idade = parseInt(document.getElementById('idade').value, 10);
-    const experiencia = parseInt(document.getElementById('experiencia').value, 10);
+    const dataNascimento = document.getElementById('data_nascimento').value;
+    const nacionalidade = document.getElementById('nacionalidade').value.trim();
+    const genero = document.getElementById('genero').value;
+    const endereco = document.getElementById('endereco').value.trim();
+    const cidade = document.getElementById('cidade').value.trim();
+    const estado = document.getElementById('estado').value.trim();
+    const cep = document.getElementById('cep').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const modalidade = document.getElementById('modalidade').value.trim();
+    const clube = document.getElementById('clube').value.trim();
+    const registro = document.getElementById('registro').value.trim();
+    const experiencia = parseInt(document.getElementById('experiencia').value.trim());
+    const treinador = document.getElementById('treinador').value.trim();
+    const contatoTreinador = document.getElementById('contato_treinador').value.trim();
+    const tipoSanguineo = document.getElementById('tipo_sanguineo').value.trim();
+    const contatoEmergencia = document.getElementById('contato_emergencia').value.trim();
+    const telefoneEmergencia = document.getElementById('telefone_emergencia').value.trim();
 
     if (!nome) {
-        alert('Por favor, preencha o seu nome!')
+        alert('Por favor, preencha o seu nome!');
         return;
-    } else if (!cpf || cpf.length !== 11 || isNaN(cpf)) {
-        alert('Por favor, insira um CPF valido!')
+    } else if (!dataNascimento) {
+        alert('Por favor, preencha a data de nascimento!');
         return;
-    } else if (isNaN(idade) || idade < 18) {
-        alert('A idade deve ser um numero maior ou igual a 18');
+    } else if (!nacionalidade) {
+        alert('Por favor, preencha a nacionalidade!');
+        return;
+    } else if (genero === "") {
+        alert('Por favor, selecione o gênero!');
+        return;
+    } else if (!endereco) {
+        alert('Por favor, preencha o endereço completo!');
+        return;
+    } else if (!cidade) {
+        alert('Por favor, preencha a cidade!');
+        return;
+    } else if (!estado) {
+        alert('Por favor, preencha o estado!');
+        return;
+    } else if (!cep || cep.length !== 8 || isNaN(cep)) {
+        alert('Por favor, insira um CEP válido com 8 dígitos!');
+        return;
+    } else if (!telefone || telefone.length < 10) {
+        alert('Por favor, insira um telefone válido com pelo menos 10 dígitos!');
+        return;
+    } else if (!email || !email.includes('@')) {
+        alert('Por favor, insira um e-mail válido!');
+        return;
+    } else if (!modalidade) {
+        alert('Por favor, preencha a modalidade esportiva!');
+        return;
+    } else if (!clube) {
+        alert('Por favor, preencha o clube/equipe!');
+        return;
+    } else if (!registro) {
+        alert('Por favor, preencha o número de registro da federação!');
+        return;
+    } else if (isNaN(experiencia) || experiencia < 0) {
+        alert('Por favor, insira uma experiência válida (número de anos)!');
+        return;
+    } else if (!treinador) {
+        alert('Por favor, preencha o nome do treinador!');
+        return;
+    } else if (!contatoTreinador || contatoTreinador.length < 10) {
+        alert('Por favor, insira um contato válido do treinador com pelo menos 10 dígitos!');
+        return;
+    } else if (!tipoSanguineo) {
+        alert('Por favor, preencha o tipo sanguíneo!');
+        return;
+    } else if (!contatoEmergencia) {
+        alert('Por favor, preencha o nome da pessoa para contato em emergência!');
+        return;
+    } else if (!telefoneEmergencia || telefoneEmergencia.length < 10) {
+        alert('Por favor, insira um telefone válido da pessoa de contato em emergência com pelo menos 10 dígitos!');
         return;
     }
-    else if (isNaN(ncontato) || ncontato < 11 > ncontato) {
-    alert('O numero de contato deve ter 11 números');
-    return;
-    }
-    else if (isNaN(noptativo) || noptativo < 11 > noptativo) {
-        alert('O numero optativo deve ter 11 números');
-        return;
-    }
-    else if (!pcd) {
-        alert('Por favor, preencha se você possui PCD!')
-        return;
-    }
-    else if (!defintelectual) {
-        alert('Por favor, preencha se você possui deficiência intelectual!')
-        return;
-    }
-    else if (!ralimentar) {
-        alert('Por favor, preencha se você possui restrição alimentar!')
-        return;
-    }
-    else if (!alergia) {
-        alert('Por favor, preencha se você possui alergiar!')
-        return;
-    }
-    else if (!treinamento) {
-        alert('Por favor, preencha quantos anos você possui de treinamento!')
-        return;
-    }
-    else if (!medalhas) {
-        alert('Por favor, preencha quais medalhas voce ja ganhou em torneios internacionais!')
-        return;
-    }
-    else if (!cob) {
-        alert('Por favor, preencha ha quanto tempo você esta no Comitê Olímpico Brasileiro (COB)!')
-        return;
-    }
-    
     
 console.log(nome);
-console.log(cpf);
-console.log(idade);
-console.log(ncontato);
-console.log(noptativo);
-console.log(pcd);
-console.log(defintelectual);
-console.log(ralimentar);
-console.log(alergia);
-console.log(treinamento)
+console.log(dataNascimento);
+console.log(nacionalidade);
+console.log(genero);
+console.log(endereco);
+console.log(cidade);
+console.log(estado);
+console.log(cep);
+console.log(telefone);
+console.log(email);
+console.log(modalidade);
+console.log(clube);
+console.log(registro);
+console.log(experiencia);
+console.log(treinador);
+console.log(contatoTreinador);
+console.log(tipoSanguineo);
+console.log(contatoEmergencia);
+console.log(telefoneEmergencia);
 } 
+
