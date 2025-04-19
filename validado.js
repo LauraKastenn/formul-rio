@@ -12,90 +12,109 @@ function validarFormulario() {
     const modalidade = document.getElementById('modalidade').value.trim();
     const clube = document.getElementById('clube').value.trim();
     const registro = document.getElementById('registro').value.trim();
-    const experiencia = parseInt(document.getElementById('experiencia').value.trim());
+    const experiencia = parseInt(document.getElementById('experiencia').value.trim(), 10);
     const treinador = document.getElementById('treinador').value.trim();
     const contatoTreinador = document.getElementById('contato_treinador').value.trim();
     const tipoSanguineo = document.getElementById('tipo_sanguineo').value.trim();
     const contatoEmergencia = document.getElementById('contato_emergencia').value.trim();
     const telefoneEmergencia = document.getElementById('telefone_emergencia').value.trim();
 
+    const isNumeric = (value) => /^\d+$/.test(value);
+
     if (!nome) {
         alert('Por favor, preencha o seu nome!');
         return;
-    } else if (!dataNascimento) {
+    } 
+    if (!dataNascimento) {
         alert('Por favor, preencha a data de nascimento!');
         return;
-    } else if (!nacionalidade) {
+    } 
+    if (!nacionalidade) {
         alert('Por favor, preencha a nacionalidade!');
         return;
-    } else if (genero === "") {
+    } 
+    if (genero === "") {
         alert('Por favor, selecione o gênero!');
         return;
-    } else if (!endereco) {
+    } 
+    if (!endereco) {
         alert('Por favor, preencha o endereço completo!');
         return;
-    } else if (!cidade) {
+    } 
+    if (!cidade) {
         alert('Por favor, preencha a cidade!');
         return;
-    } else if (!estado) {
+    } 
+    if (!estado) {
         alert('Por favor, preencha o estado!');
         return;
-    } else if (!cep || cep.length !== 8 || isNaN(cep)) {
+    } 
+    if (!cep || !isNumeric(cep) || cep.length !== 8) {
         alert('Por favor, insira um CEP válido com 8 dígitos!');
         return;
-    } else if (!telefone || telefone.length < 10) {
+    } 
+    if (!telefone || !isNumeric(telefone) || telefone.length < 10) {
         alert('Por favor, insira um telefone válido com pelo menos 10 dígitos!');
         return;
-    } else if (!email || !email.includes('@')) {
+    } 
+    if (!email || !email.includes('@') || !email.includes('.')) {
         alert('Por favor, insira um e-mail válido!');
         return;
-    } else if (!modalidade) {
+    } 
+    if (!modalidade) {
         alert('Por favor, preencha a modalidade esportiva!');
         return;
-    } else if (!clube) {
+    } 
+    if (!clube) {
         alert('Por favor, preencha o clube/equipe!');
         return;
-    } else if (!registro) {
+    } 
+    if (!registro || !isNumeric(registro)) {
         alert('Por favor, preencha o número de registro da federação!');
         return;
-    } else if (isNaN(experiencia) || experiencia < 0) {
+    } 
+    if (isNaN(experiencia) || experiencia < 0) {
         alert('Por favor, insira uma experiência válida (número de anos)!');
         return;
-    } else if (!treinador) {
+    } 
+    if (!treinador) {
         alert('Por favor, preencha o nome do treinador!');
         return;
-    } else if (!contatoTreinador || contatoTreinador.length < 10) {
+    } 
+    if (!contatoTreinador || !isNumeric(contatoTreinador) || contatoTreinador.length < 10) {
         alert('Por favor, insira um contato válido do treinador com pelo menos 10 dígitos!');
         return;
-    } else if (!tipoSanguineo) {
+    } 
+    if (!tipoSanguineo) {
         alert('Por favor, preencha o tipo sanguíneo!');
         return;
-    } else if (!contatoEmergencia) {
+    } 
+    if (!contatoEmergencia) {
         alert('Por favor, preencha o nome da pessoa para contato em emergência!');
         return;
-    } else if (!telefoneEmergencia || telefoneEmergencia.length < 10) {
+    } 
+    if (!telefoneEmergencia || !isNumeric(telefoneEmergencia) || telefoneEmergencia.length < 10) {
         alert('Por favor, insira um telefone válido da pessoa de contato em emergência com pelo menos 10 dígitos!');
         return;
     }
-    
-console.log(nome);
-console.log(dataNascimento);
-console.log(nacionalidade);
-console.log(genero);
-console.log(endereco);
-console.log(cidade);
-console.log(estado);
-console.log(cep);
-console.log(telefone);
-console.log(email);
-console.log(modalidade);
-console.log(clube);
-console.log(registro);
-console.log(experiencia);
-console.log(treinador);
-console.log(contatoTreinador);
-console.log(tipoSanguineo);
-console.log(contatoEmergencia);
-console.log(telefoneEmergencia);
-} 
 
+    console.log(nome);
+    console.log(dataNascimento);
+    console.log(nacionalidade);
+    console.log(genero);
+    console.log(endereco);
+    console.log(cidade);
+    console.log(estado);
+    console.log(cep);
+    console.log(telefone);
+    console.log(email);
+    console.log(modalidade);
+    console.log(clube);
+    console.log(registro);
+    console.log(experiencia);
+    console.log(treinador);
+    console.log(contatoTreinador);
+    console.log(tipoSanguineo);
+    console.log(contatoEmergencia);
+    console.log(telefoneEmergencia);
+}

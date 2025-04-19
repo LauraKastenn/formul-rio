@@ -15,6 +15,9 @@
         </header>
     <form action="" id="maquinistaForm">
         <div class="principal">
+        <h1>
+            Informações Pessoais
+        </h1> 
 <label for="nome">Nome completo:</label>
 <br>
 <input type="text" id="nome" name="nome" required>
@@ -41,6 +44,7 @@
 
         <br>
         <br>
+        <h1>Endereço e contato</h1>
 <label for="endereco">Endereço completo:</label>
 <br>
 <input type="text" id="endereco" name="endereco" required>
@@ -76,7 +80,7 @@
 <input type="email" id="email" name="email" required>
 <br>
 <br>
-
+<h1>Informações esportivas</h1>
 <label for="modalidade">Modalidade esportiva:</label>
 <br>
 <input type="text" id="modalidade" name="modalidade" required>
@@ -118,7 +122,7 @@
 <input type="tel" id="contato_treinador" name="contato_treinador" required>
 <br>
 <br>
-
+<h1>Nome do treinador</h1>
 <label for="tipo_sanguineo">Tipo sanguíneo:</label>
 <br>
 <input type="text" id="tipo_sanguineo" name="tipo_sanguineo" required>
@@ -148,38 +152,28 @@
 <input type="text" id="historico" name="historico">
 <br>
 <br>
-
+<h1>Objetivos</h1>
 <label for="objetivos">Objetivos para as Olimpíadas:</label>
 <br>
-<textarea id="objetivos" name="objetivos" required></textarea>
+<textarea class="geral" id="objetivos" name="objetivos" required></textarea>
 <br>
 <br>
 
 <label for="disponibilidade">Disponibilidade para treinos (dias e horários):</label>
 <br>
-<textarea id="disponibilidade" name="disponibilidade" required></textarea>
+<textarea class="geral" id="disponibilidade" name="disponibilidade" required></textarea>
 <br>
 <br>
 
 <label for="competicoes">Participação em outras competições:</label>
 <br>
-<textarea id="competicoes" name="competicoes"></textarea>
+<textarea class="geral" id="competicoes" name="competicoes"></textarea>
 <br>
 <br>
 
 <label for="referencias">Referências pessoais (nome e contato):</label>
 <br>
-<textarea id="referencias" name="referencias"></textarea>
-<br>
-<br>
-
-<label for="consentimento">Consentimento para uso de imagem:</label>
-<input type="checkbox" id="termos" name="consentimento" required>
-<br>
-<br>
-
-<label for="termos">Aceitação dos termos e condições:</label>
-<input type="checkbox" id="termos" name="termos" required>
+<textarea class="geral" id="referencias" name="referencias"></textarea>
 <br>
 <br>
 
@@ -194,6 +188,17 @@
 <input type="tel" id="telefone_emergencia" name="telefone_emergencia" required>
 <br>
 <br>
+
+<label for="consentimento">Consentimento para uso de imagem:</label>
+<input type="checkbox" id="termos" name="consentimento" required>
+<br>
+<br>
+
+<label for="termos">Aceitação dos termos e condições:</label>
+<input type="checkbox" id="termos" name="termos" required>
+<br>
+<br>
+
 <button type="submit">ENVIAR</button>
 </div>
     </form>

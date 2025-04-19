@@ -42,5 +42,10 @@ button{
 }
 #termos{
   width: 30px;
+  margin: 5px;
 }
-
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(13, 88, 28); 
+  text-align: center;
+}
